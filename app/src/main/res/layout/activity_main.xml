@@ -4,26 +4,26 @@
     android:layout_height="match_parent"
     android:id="@+id/main">
 
-    <!-- Fondo de pantalla con imagen -->
+
     <ImageView
-        android:id="@+id/my_image"
+        android:id="@+id/fondo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
         android:src="@drawable/fondo2" />
 
-    <!-- Logo centrado horizontalmente -->
+
     <ImageView
         android:id="@+id/logfinal"
         android:layout_width="215dp"
         android:layout_height="99dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
-        android:src="@drawable/logo" /> <!-- Asegúrate de tener la imagen logo -->
+        android:src="@drawable/logo" />
 
-    <!-- Primer botón centrado horizontalmente -->
+
     <Button
-        android:id="@+id/boton1"
+        android:id="@+id/btnStart"
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_below="@id/logfinal"
@@ -35,12 +35,12 @@
         android:textStyle="bold"
     />
 
-    <!-- Segundo botón centrado horizontalmente, debajo del primer botón -->
+
     <Button
-        android:id="@+id/boton2"
+        android:id="@+id/btnSalir"
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_below="@id/boton1"
+        android:layout_below="@id/btnStart"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="SALIR"
