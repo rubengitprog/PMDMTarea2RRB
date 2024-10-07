@@ -1,19 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:id="@+id/main">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Fondo de pantalla con imagen -->
+    <ImageView
+        android:id="@+id/my_image"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo2" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Logo centrado horizontalmente -->
+    <ImageView
+        android:id="@+id/logfinal"
+        android:layout_width="215dp"
+        android:layout_height="99dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/logo" /> <!-- Asegúrate de tener la imagen logo -->
+
+    <!-- Primer botón centrado horizontalmente -->
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/logfinal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="INICIAR"
+
+        android:backgroundTint="#FF0000"
+        android:textStyle="bold"
+    />
+
+    <!-- Segundo botón centrado horizontalmente, debajo del primer botón -->
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/boton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="SALIR"
+        android:backgroundTint="#FF1800"/>
+
+</RelativeLayout>
